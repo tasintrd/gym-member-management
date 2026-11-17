@@ -1,0 +1,46 @@
+:root {
+  --navy: #14251f;
+  --green: #1d8a61;
+  --green-dark: #146b4a;
+  --muted: #748078;
+  --surface: #ffffff;
+  --page: #f4f7f5;
+}
+body { background: var(--page); color: #1e2923; font-family: Arial, sans-serif; }
+.navbar { background: var(--navy); }
+.navbar-brand { letter-spacing: 1.5px; }
+.navbar-brand span { color: #63d5a2; }
+.navbar-text { color: #c9d8d0 !important; font-size: .9rem; }
+.welcome { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.eyebrow { color: var(--green); font-size: .7rem; font-weight: 800; letter-spacing: 1.5px; }
+.btn-primary { background: var(--green); border-color: var(--green); }
+.btn-primary:hover, .btn-primary:focus { background: var(--green-dark); border-color: var(--green-dark); }
+.stat-card, .panel { background: var(--surface); border: 1px solid #e7ede9; border-radius: 14px; box-shadow: 0 4px 18px rgba(20, 37, 31, .04); }
+.stat-card { padding: 20px 22px; }
+.stat-card p { color: var(--muted); margin-bottom: 8px; font-size: .9rem; }
+.stat-card h2 { font-size: 1.8rem; font-weight: 750; margin: 0; }
+.panel { padding: 22px; }
+.search-box { max-width: 300px; }
+.table { min-width: 760px; margin-bottom: 0; }
+.table thead th { color: #7b8981; font-size: .75rem; text-transform: uppercase; letter-spacing: .6px; border-bottom-color: #e8eee9; }
+.table td { border-bottom-color: #edf1ee; font-size: .9rem; }
+.member-name { font-weight: 650; }
+.member-email { color: #839087; font-size: .78rem; }
+.status-pill { display: inline-block; padding: 5px 10px; border-radius: 30px; font-size: .75rem; font-weight: 700; }
+.status-active { background: #e2f6eb; color: #187346; }
+.status-inactive { background: #f0f1f1; color: #68736c; }
+.action-btn { border: 0; background: transparent; padding: 5px 8px; font-size: .83rem; font-weight: 600; }
+.edit-btn { color: #2675bd; }
+.delete-btn { color: #d04c4c; }
+.modal-content { border: 0; border-radius: 15px; }
+.modal-header, .modal-footer { border-color: #edf1ee; }
+.form-control, .form-select { padding: 10px 12px; border-color: #dce5df; }
+.form-control:focus, .form-select:focus { border-color: #73bd9a; box-shadow: 0 0 0 .2rem rgba(29, 138, 97, .12); }
+.form-label { font-size: .85rem; font-weight: 650; }
+@media (max-width: 576px) {
+  .welcome { align-items: flex-start; flex-direction: column; }
+  .welcome .btn { width: 100%; }
+  .panel { padding: 15px; }
+  .search-box { max-width: none; width: 100%; }
+  .navbar-text { display: none; }
+}
